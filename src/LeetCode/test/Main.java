@@ -1,6 +1,10 @@
 package LeetCode.test;
 
+import LeetCode.TreeNode;
+import LeetCode.剑指offer.LevelOrder;
 import LeetCode.剑指offer.MaxSlidingWindow;
+
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -87,7 +91,14 @@ public class Main {
 //        int[] a = {1,3,-1,-3,5,3,6,7};
 //        MaxSlidingWindow b = new MaxSlidingWindow();
 //        System.out.println(b.maxSlidingWindow(a,3));
-
+        TreeNode treeNode = new TreeNode(3);
+        treeNode.left = new TreeNode(9);
+        treeNode.right = new TreeNode(20);
+        treeNode.right.left = new TreeNode(15);
+        treeNode.right.right = new TreeNode(7);
+        treeNode.left.right = treeNode.left.left = null;
+        LevelOrder levelOrder = new LevelOrder();
+        List<List<Integer>> a = levelOrder.levelOrder(treeNode);
     }
 //    public static void test() {
 //        String s = "a";
