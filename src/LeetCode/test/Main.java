@@ -101,11 +101,11 @@ public class Main {
 //        treeNode.left.right = treeNode.left.left = null;
 //        LevelOrder levelOrder = new LevelOrder();
 //        List<List<Integer>> a = levelOrder.levelOrder(treeNode);
-        QuickSort quickSort = new QuickSort();
-        int[] a = {2,5,1,7,3,6,9,8};
-        int[] b = quickSort.quickSort(a,0,a.length - 1);
-        for (int i = 0; i < b.length; i++)
-            System.out.println(b[i]);
+//        QuickSort quickSort = new QuickSort();
+//        int[] a = {2,5,1,7,3,6,9,8};
+//        int[] b = quickSort.quickSort(a,0,a.length - 1);
+//        for (int i = 0; i < b.length; i++)
+//            System.out.println(b[i]);
 
     }
 //    public static void test() {
