@@ -3,6 +3,8 @@ package LeetCode.test;
 import LeetCode.TreeNode;
 import LeetCode.剑指offer.LevelOrder;
 import LeetCode.剑指offer.MaxSlidingWindow;
+import study.MergeSort;
+import study.QuickSort;
 
 import java.util.List;
 
@@ -91,14 +93,20 @@ public class Main {
 //        int[] a = {1,3,-1,-3,5,3,6,7};
 //        MaxSlidingWindow b = new MaxSlidingWindow();
 //        System.out.println(b.maxSlidingWindow(a,3));
-        TreeNode treeNode = new TreeNode(3);
-        treeNode.left = new TreeNode(9);
-        treeNode.right = new TreeNode(20);
-        treeNode.right.left = new TreeNode(15);
-        treeNode.right.right = new TreeNode(7);
-        treeNode.left.right = treeNode.left.left = null;
-        LevelOrder levelOrder = new LevelOrder();
-        List<List<Integer>> a = levelOrder.levelOrder(treeNode);
+//        TreeNode treeNode = new TreeNode(3);
+//        treeNode.left = new TreeNode(9);
+//        treeNode.right = new TreeNode(20);
+//        treeNode.right.left = new TreeNode(15);
+//        treeNode.right.right = new TreeNode(7);
+//        treeNode.left.right = treeNode.left.left = null;
+//        LevelOrder levelOrder = new LevelOrder();
+//        List<List<Integer>> a = levelOrder.levelOrder(treeNode);
+        QuickSort quickSort = new QuickSort();
+        int[] a = {2,5,1,7,3,6,9,8};
+        int[] b = quickSort.quickSort(a,0,a.length - 1);
+        for (int i = 0; i < b.length; i++)
+            System.out.println(b[i]);
+
     }
 //    public static void test() {
 //        String s = "a";
