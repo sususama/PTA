@@ -1,6 +1,7 @@
 package study;
 
 public class QuickSort {
+    // 快速排序
     public int[] quickSort(int[] nums, int left,int right){
         if (left < right){
             // 前提条件

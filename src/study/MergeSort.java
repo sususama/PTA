@@ -1,6 +1,7 @@
 package study;
 
 public class MergeSort {
+    // 归并排序
     public int[] mergeSort(int[] nums, int[] ans, int start, int end){
         if (start >= end) return null;
         int len = end - start, mid = (start + end)/2;
