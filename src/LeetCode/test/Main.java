@@ -107,8 +107,8 @@ public class Main {
 //        int[] b = quickSort.quickSort(a,0,a.length - 1);
 //        for (int i = 0; i < b.length; i++)
 //            System.out.println(b[i]);
-        int[] temp = {1, 2, 3};
-        System.out.println(Arrays.binarySearch(temp,4));
+//        int[] temp = {1, 2, 3};
+//        System.out.println(Arrays.binarySearch(temp,4));
     }
 //    public static void test() {
 //        String s = "a";
